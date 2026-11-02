@@ -1,0 +1,107 @@
+
+body {
+    background-color: #F3F0EA;
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+
+.about-heading {
+    background-color: #DDBCBD;
+    padding: 60px 20px;
+}
+
+.about-heading h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.about-heading p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.story-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+section p {
+    line-height: 1.8;
+}
+
+.mission-section {
+    background-color: #E8DDD5;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mission-section p {
+    max-width: 700px;
+    margin: auto;
+}
+
+.mission-icon {
+    font-size: 35px;
+    color: #B07969;
+    margin-bottom: 15px;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 30px 20px;
+    height: 100%;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card i {
+    font-size: 35px;
+    color: #B07969;
+    margin-bottom: 20px;
+}
+
+.feature-card h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.shop-section {
+    background-color: #DDBCBD;
+}
+
+.shop-btn {
+    background-color: #B07969;
+    color: white;
+    padding: 10px 30px;
+}
+
+.shop-btn:hover {
+    background-color: #946252;
+    color: white;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+}
+
+@media (max-width: 576px) {
+    .about-heading h1 {
+        font-size: 32px;
+    }
+
+    .story-image {
+        height: 250px;
+    }
+}

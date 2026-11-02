@@ -1,0 +1,224 @@
+.prdtimages,
+.mainimage {
+    flex-direction: column;
+
+}
+
+.prdtimages {
+    margin-left: 10px;
+}
+
+.prdtimages img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.mainimage img {
+    width: 100%;
+    object-fit: cover;
+    height: 480px;
+
+}
+
+.prdtdetails {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px;
+}
+
+.prdthead {
+    color: rgb(123, 123, 123);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.rating {
+    width: 10rem;
+    border: 1px solid rgb(123, 123, 123);
+    padding: 3px;
+    text-align: center;
+}
+
+.rating,
+.price,
+.size {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.small-line {
+    width: 2px;
+    height: 15px;
+    background-color: #D8D9DF;
+}
+
+.prdtdetails hr {
+    width: 90%;
+}
+
+.strk {
+    text-decoration: line-through;
+}
+
+.prc {
+    font-size: 18px;
+}
+
+.off {
+    color: #FFAB90;
+}
+
+.incl p {
+    color: #26B298;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.size {
+    gap: 28px;
+    font-weight: 900;
+}
+
+.sizechart {
+    color: #FF5683;
+}
+
+.szchart {
+    display: flex;
+    gap: 10px;
+}
+
+.szchart p {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.szchart p:hover {
+    border: 2px solid #ccc;
+    border-color: #FFBFCE;
+}
+
+.add {
+    display: flex;
+    gap: 40px;
+}
+
+.wish:hover {
+    background-color: white;
+    color: black;
+}
+
+.pinbox {
+    display: flex;
+    width: 14rem;
+    gap: 8px;
+    justify-content: center;
+}
+
+.pinbtn {
+    background: transparent;
+    color: red;
+    border: 1px solid #ccc;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.pinbox input {
+    padding: 2px 15px;
+    width: 100%;
+    font-size: small;
+}
+
+.prdtdet p {
+    color: rgb(123, 123, 123);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sim-prdts {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.sim-prdts-head {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 20px;
+    font-weight: 600;
+}
+
+.sim-prdts img {
+    width: 200px;
+    height: 220px;
+    object-fit: cover;
+}
+
+@media (max-width: 769px) {
+
+    .sim-prdts img {
+        width: 100px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 440px) {
+    body {
+        font-size: 12px;
+    }
+
+    .mainimage img {
+        height: 280px;
+    }
+
+    .prdtdetails h3 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .prdthead {
+        font-size: 12px;
+
+    }
+
+    .rating,
+    .rat {
+        font-size: 10px;
+
+    }
+
+    .price,
+    .prc,
+    .incl,
+    .size h6,
+    .szchart,
+    .add button,
+    .prdtdet,
+    .pinbox,
+    .del-op {
+        font-size: 12px;
+    }
+
+    .sim-prdts {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .sim-prdts img {
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+}

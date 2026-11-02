@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sec1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin: 5px;
+    margin-right: 0;
+    font-family: "Pin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue";
+}
+.sec1 img{
+    width: 115px;
+    height: 150px;
+    object-fit: cover;
+
+}
+hr{
+    width: 90%;
+}
+.sec1a{
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.sec2{
+
+    margin: 10px;
+    margin-left: 0;
+    font-family: "Pin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue";
+
+}
+.btnqty {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100%;
+    width: 5rem;
+}
+.btnqty button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btnqty button{
+    width: 5px;
+}
+.price-sum{
+    margin: 18px;
+    height: 28rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    border-color: #C1C1C1;
+    padding: 15px;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.price1a{
+    display: flex;
+    justify-content: space-between;
+}
+.mybtn{
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+.prcdbtn{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 400px) {
+
+.sec1 img{
+    width: 100px;
+
+}
+body{
+    font-size: smaller;
+}
+}

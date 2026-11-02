@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styleshop.css">
+    <link rel="stylesheet" href="stylehome.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row navrow sticky-top">
+            <div class="col-12 col-md-10 col-lg-12">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/logob.png" alt="Logo" class="logo">
+                        <span class="stylhead" style="border: none; border-image-width:0">StyleHub</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="shop.html">All Products</a></li>
+                                    <li><a class="dropdown-item" href="shop.html">New Arrivals</a></li>
+                                    <li><a class="dropdown-item" href="shop.html">Best Sellers</a></li>
+                                    <li><a class="dropdown-item" href="shop.html">Sale</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Women
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="shop.html">Tops</a></li>
+                                    <li><a class="dropdown-item" href="shop.html">Kurta/Kurta sets</a></li>
+                                    <li><a class="dropdown-item" href="shop.html">T shirts</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Men
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="shop.html">Shirt</a></li>
+                                    <li><a class="dropdown-item" href="shop.html">T shirt</a></li>
+                                    <li><a class="dropdown-item" href="shop.html">Pants</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Accessories
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="shop.html">Sunglasses</a></li>
+                                    <li><a class="dropdown-item" href="shop.html">Bags</a></li>
+                                    <li><a class="dropdown-item" href="shop.html">Watches</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="navbar-icons">
+                            <a href="login.html" class="btn">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+                            <a href="" class="btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="" class="btn ">
+                                <i class="fa-regular fa-heart position-relative">
+                                    <span
+                                        class="position-absolute top-0 start-150 translate-middle badge rounded-pill bg-danger">
+                                        <small>3</small>
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span></i>
+
+                            </a>
+                            <a href="cart.html" class="btn">
+                                <i class="fa-solid fa-bag-shopping position-relative"> <span
+                                        class="position-absolute top-0 start-150 translate-middle badge rounded-pill bg-danger">
+                                        <small>2</small>
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span></i>
+
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="shop-page">
+
+            <input type="radio" name="filter" id="all" checked>
+            <input type="radio" name="filter" id="women">
+            <input type="radio" name="filter" id="men">
+            <input type="radio" name="filter" id="accessories">
+
+            <aside class="filter-section">
+                <h5>Filters</h5>
+                <hr>
+                <h6>Category</h6>
+
+                <label for="all">All Products</label>
+                <label for="women">Women</label>
+                <label for="men">Men</label>
+                <label for="accessories">Accessories</label>
+            </aside>
+
+            <div class="products-section">
+
+                <h4 class="mb-3">All Products</h4>
+
+                <div class="row categ g-3">
+                    <div class="col-12 col-sm-6 col-lg-3 product-item women">
+                        <div class="card h-100 product-card">
+                            <a href="product.html">
+                                <img src="./images/w1.jpg" class="card-img-top" alt="...">
+                            </a>
+
+                            <div class="card-body">
+                                <h6 class="card-title">Kurta Set</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>
+                                    1,499 </span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i> 1,999
+                                    </del><small> (25% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item men">
+
+                        <div class="card h-100 product-card">
+                            <img src="./images/m11.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Printed T-Shirt</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star-half-stroke fa-width-auto"
+                                        style="color: rgb(255, 212, 59);"></i></span><span class="rat"> (4.3)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto symbrup"></i>
+                                    899</span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>1,499
+                                    </del><small> (26% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item women">
+                        <div class="card h-100 product-card">
+                            <img src="./images/wtop.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Flutter Sleeve Top</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star-half-stroke fa-width-auto"
+                                        style="color: rgb(255, 212, 59);"></i></span><span class="rat"> (4.6)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto symbrup"></i>
+                                    799</span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>1,099
+                                    </del><small> (27% off)</small></span>
+
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item men">
+
+                        <div class="card h-100 product-card">
+                            <img src="./images/men.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Black Casual Shirt</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.6)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto symbrup"></i>
+                                    1,699</span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>2,299
+                                    </del><small> (20% off)</small></span>
+
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item women">
+
+                        <div class="card h-100 product-card">
+                            <img src="./images/w3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Floral Kurta</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star-half-stroke fa-width-auto"
+                                        style="color: rgb(255, 212, 59);"></i></i></span><span class="rat"> (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto symbrup"></i>
+                                    1,699</span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>2,499
+                                    </del><small> (20% off)</small></span>
+
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item men">
+
+                        <div class="card h-100 product-card">
+                            <img src="./images/mtshirt.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Cotton T-Shirt</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>
+                                    499 </span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i> 1,999
+                                    </del><small> (25% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item accessories">
+
+                        <div class="card h-100 product-card">
+                            <img src="./images/sunglass.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Sunglasses</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>
+                                    999 </span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i> 1,999
+                                    </del><small> (25% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item women">
+
+                        <div class="card h-100 product-card">
+                            <img src="./images/oversized.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Oversized T-shirt</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>
+                                    1,499 </span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i> 1,999
+                                    </del><small> (25% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item men">
+                        <div class="card h-100 product-card">
+                            <img src="./images/casual.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Casual Shirt</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star-half-stroke fa-width-auto"
+                                        style="color: rgb(255, 212, 59);"></i></span><span class="rat"> (4.3)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto symbrup"></i>
+                                    999</span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>1,299
+                                    </del><small> (23% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item women">
+
+                        <div class="card h-100 product-card">
+                            <img src="./images/crop.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Ribbed Crop Top</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star-half-stroke fa-width-auto"
+                                        style="color: rgb(255, 212, 59);"></i></span><span class="rat"> (4.6)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto symbrup"></i>
+                                    799</span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>1,099
+                                    </del><small> (27% off)</small></span>
+
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item women">
+                        <div class="card h-100 product-card">
+                            <img src="./images/wideleg.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Wide Leg Jeans</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.6)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto symbrup"></i>
+                                    1,699</span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>2,299
+                                    </del><small> (20% off)</small></span>
+
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item accessories">
+
+                        <div class="card h-100 product-card">
+                            <img src="./images/sneakers.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Sneakers</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star-half-stroke fa-width-auto"
+                                        style="color: rgb(255, 212, 59);"></i></i></span><span class="rat"> (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto symbrup"></i>
+                                    1,699</span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>2,499
+                                    </del><small> (20% off)</small></span>
+
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item women">
+                        <div class="card h-100 product-card">
+                            <img src="./images/wtop2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title"> Pastel Yellow Top</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>
+                                    699 </span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i> 1,999
+                                    </del><small> (25% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item men">
+                        <div class="card h-100 product-card">
+                            <img src="./images/m2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Classic Casual Shirt</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>
+                                    899 </span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i> 1,499
+                                    </del><small> (40% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item women">
+                        <div class="card h-100 product-card">
+                            <img src="./images/wtshirt1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title"> Frill Sleeve T-Shirt</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>
+                                    599 </span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i> 999
+                                    </del><small> (40% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item women">
+                        <div class="card h-100 product-card">
+                            <img src="./images/w2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Purple Kurta Set</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>
+                                    1,499 </span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i> 2,499
+                                    </del><small> (40% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item accessories">
+                        <div class="card h-100 product-card">
+                            <img src="./images/watch.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Analog Watch</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>
+                                    1,499 </span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i> 2,499
+                                    </del><small> (40% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item men">
+                        <div class="card h-100 product-card">
+                            <img src="./images/m3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Blue Jeans</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>
+                                    1,499 </span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i> 1,999
+                                    </del><small> (25% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-lg-3 product-item women">
+                        <div class="card h-100 product-card">
+                            <img src="./images/wtshirt2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Yellow T-Shirt</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>
+                                    1,499 </span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i> 1,999
+                                    </del><small> (25% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item men">
+                        <div class="card h-100 product-card">
+                            <img src="./images/m6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Formal Shirt</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>
+                                    1,299 </span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i> 1,999
+                                    </del><small> (25% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item women">
+                        <div class="card h-100 product-card">
+                            <img src="./images/floral.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Floral Midi Dress</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>
+                                    1,499 </span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i> 1,999
+                                    </del><small> (25% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item women">
+                        <div class="card h-100 product-card">
+                            <img src="./images/satin.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Satin Evening Dress</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>
+                                    1,499 </span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i> 1,999
+                                    </del><small> (25% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item men">
+                        <div class="card h-100 product-card">
+                            <img src="./images/blazer.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Modern Fit Blazer</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>
+                                    1,499 </span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i> 1,999
+                                    </del><small> (25% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 product-item accessories">
+                        <div class="card h-100 product-card">
+                            <img src="./images/handbag.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Handbag</h6>
+                                <span class="star"><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span><span
+                                    class="rat">
+                                    (4.5)</span>
+                                <br><span class="rupee2"><i
+                                        class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i>
+                                    1,499 </span>
+                                <span class="strike2"><del><i
+                                            class="fa-solid fa-indian-rupee-sign fa-width-auto smallsymb"></i> 1,999
+                                    </del><small> (25% off)</small></span>
+                            </div>
+                            <button type="button" class="btn wishlistbtn">Wishlist <i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

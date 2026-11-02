@@ -1,0 +1,530 @@
+* {
+    box-sizing: border-box;
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+.container-fluid {
+    overflow-x: clip;
+}
+
+body {
+    font-family: Plus Jakarta Sans;
+    /* background-color: #F3F0EA; */
+}
+
+.navrow {
+    justify-content: center;
+    /* font-family: Plus Jakarta Sans; */
+}
+
+/* .navbar-brand{
+    padding-left: 20px;
+} */
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-brand {
+    width: 130px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+    /* align-items: center; */
+    /* padding-left: 20px; */
+    color: #d63384;
+    font-weight: 700;
+    font-size: 22px;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    /* gap:1px */
+}
+
+.logo {
+    width: 55px;
+    height: 58px;
+    transform: scale(1.8);
+    object-fit: cover;
+    /* border: 1px solid rgb(76, 22, 22); */
+    /* border-radius:50%; */
+    /* position: absolute; */
+    /* left: 0;  */
+    /* top: 8px; */
+    /* bottom: 0; */
+    /* border: none; */
+}
+
+
+/* .navrow {
+    margin-left: 0;
+    margin-right: 0;
+} */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.fashion-carousel {
+    height: 450px;
+}
+
+.fashion-carousel .carousel-item {
+    height: 450px;
+}
+
+.fashion-carousel .carousel-item img {
+    /* height: 100%; */
+    height: 450px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    text-align: left;
+    left: 8%;
+    bottom: 55%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.shop {
+    background-color: #B79D8E;
+    border: none;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 400;
+    /* transition: background-color 0.3s ease, transform 0.3s ease; */
+    transition: all 0.3s ease;
+}
+
+.shop:hover {
+    background-color: #ba805e;
+    transform: scale(1.1);
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icons i {
+    font-size: 18px;
+}
+
+.badge {
+    font-size: 8px;
+}
+
+.navbar-icons .btn {
+    font-size: 18px;
+    border: none;
+}
+
+.navbar-icons .btn:hover {
+    color: #d63384;
+}
+
+.categ {
+    margin-top: 20px;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    /* margin: 100px; */
+    /* border: 2px solid brown; */
+}
+
+.card {
+    margin-top: 20px;
+
+    /* border: 2px solid black; */
+}
+
+.categ img {
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: 800;
+}
+
+.catebtn {
+    border: none;
+}
+
+.trend {
+    text-align: left;
+    font-weight: 700;
+    /* justify-content: flex-start; */
+    margin-left: 40px;
+    /* font-family: Pin Sans; */
+}
+
+.star {
+    font-size: 12px;
+}
+
+.rat {
+    color: rgb(123, 123, 123);
+    font-size: 14px;
+}
+
+.rupee {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.symbrup {
+    font-size: 15px;
+    /* height: 2rem; */
+}
+
+.strike {
+    color: rgb(123, 123, 123);
+    font-size: medium;
+    margin-left: 1rem;
+    /* text-decoration:line-through; */
+}
+
+.smallsymb {
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.offer {
+    background-color: #DDBCBD;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+.poster img {
+    /* border: 2px solid black; */
+    object-fit: cover;
+    width: 100%;
+    /* height: 75%; */
+
+}
+
+.posternew {
+    font-family: "Plus Jakarta Sans";
+    padding: 10px;
+    /* border: 1px solid rgb(123, 123, 123); */
+    /* width: 100%; */
+}
+
+.posterhead {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding: 13px;
+    text-align: center;
+}
+
+.posterhead h3 {
+    margin: 0;
+}
+
+.small-line-poster {
+    width: 70px;
+    height: 3px;
+    background-color: #CAA38F;
+    margin-top: 13px;
+    flex-shrink: 0;
+}
+
+.poster-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 17px;
+}
+
+.benefit {
+    padding: 15px 8px;
+}
+
+.poster-content i {
+    font-size: 30px;
+    margin-right: 8px;
+}
+
+.poster-content {
+    text-align: center;
+    font-size: 17px;
+    row-gap: 25px;
+}
+
+.poster-content p {
+    margin: 8px 0 0;
+}
+
+.sm-ver-line {
+    height: 70px;
+    width: 3px;
+    background-color: #CAA38F;
+}
+
+footer {
+    background: #171D22;
+    color: white;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.line {
+    width: 80px;
+    height: 2px;
+    background-color: #DDBCBD;
+}
+
+.heading h2 {
+    margin: 0;
+}
+
+.links a {
+    color: rgb(112, 116, 234);
+    text-decoration: none;
+}
+
+
+.stylehub-footer {
+    background-color: #f5eeeb;
+    color: #4a3b38;
+    padding: 30px 0 15px;
+    margin-top: 10px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.footer-logo {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.stylehub-footer h5 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.stylehub-footer p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #71635f;
+}
+
+.stylehub-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stylehub-footer ul li {
+    margin-bottom: 12px;
+}
+
+.stylehub-footer ul li a {
+    text-decoration: none;
+    color: #71635f;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.stylehub-footer ul li a:hover {
+    color: #b77b69;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #4a3b38;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #b77b69;
+    transform: translateY(-3px);
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.newsletter-form input {
+    width: 100%;
+    min-width: 0;
+    padding: 8px;
+    border: 1px solid #d6c5bf;
+    border-radius: 4px;
+    font-size: 13px;
+    outline: none;
+}
+
+.newsletter-form input:focus {
+    border-color: #b77b69;
+}
+
+.newsletter-form button {
+    background-color: #b77b69;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #8e5b4c;
+}
+
+.stylehub-footer hr {
+    border-color: #cbbab4;
+    margin: 35px 0 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.footer-bottom .fa-heart {
+    color: #b77b69;
+}
+
+@media (max-width: 576px) {
+    .stylehub-footer {
+        padding-top: 35px;
+    }
+
+    .newsletter-form {
+        flex-wrap: wrap;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    body {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+    .carousel-caption {
+        font-size: 0.5rem;
+        bottom: 48%
+    }
+
+    .carousel-caption h4 {
+        font-size: 10px;
+    }
+
+    .fashion-carousel {
+        height: 220px;
+    }
+
+    .fashion-carousel .carousel-item {
+        height: 220px;
+    }
+
+    .fashion-carousel .carousel-item img {
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 15px;
+        height: 15px;
+    }
+
+    .categ img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        align-items: center;
+    }
+
+    .navbar-icons {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .posternew div {
+        font-size: 8px;
+
+    }
+
+    .posterhead h3 {
+        font-size: small;
+    }
+
+    .small-line-poster {
+        width: 40px;
+        height: 2px;
+
+    }
+
+    .sm-ver-line {
+
+        height: 50px;
+        width: 2px;
+    }
+
+    .poster-content i {
+        font-size: 15px;
+        margin-right: 8px;
+    }
+}
